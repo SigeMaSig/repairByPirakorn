@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบแจ้งซ่อมคอมของ VBAC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="VBAC Logo" class="logo">
+        <h1>ระบบแจ้งซ่อมคอมของ VBAC</h1>
+    </div>
+    <div class="container">
+        <h2>แจ้งซ่อมคอมพิวเตอร์</h2>
+        <form id="repairForm">
+            <label for="room">เลือกห้องคอม:</label>
+            <select id="room" name="room" onchange="updateComputers()">
+                <option value="">-- เลือกห้องคอม --</option>
+                <option value="201">ห้องคอม 201</option>
+                <option value="202">ห้องคอม 202</option>
+                <option value="203">ห้องคอม 203</option>
+                <option value="204">ห้องคอม 204</option>
+                <option value="205">ห้องคอม 205</option>
+                <option value="206">ห้องคอม 206</option>
+                <option value="207">ห้องคอม 207</option>
+                <option value="208">ห้องคอม 208</option>
+                <option value="209">ห้องคอม 209</option>
+                <option value="311">ห้องคอม 311</option>
+            </select>
+
+            <label for="computer">เลือกคอม:</label>
+            <select id="computer" name="computer" disabled>
+                <option value="">-- กรุณาเลือกห้องก่อน --</option>
+            </select>
+
+            <label for="problem">ปัญหาที่พบ:</label>
+            <textarea id="problem" name="problem" rows="4" placeholder="อธิบายปัญหาที่เจอ เช่น คอมเปิดไม่ติด"></textarea>
+
+            <button type="submit">ส่งข้อมูลแจ้งซ่อม</button>
+        </form>
+        <p>ต้องการตรวจสอบสถานะ? <a href="user_status.html" class="status-link">คลิกที่นี่</a></p>
+        <p>สำหรับแอดมิน: <a href="repair_list.html" class="admin-link">ดูรายการทั้งหมด</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

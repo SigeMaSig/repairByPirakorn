@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายการแจ้งซ่อมคอมของ VBAC (แอดมิน)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="VBAC Logo" class="logo">
+        <h1>รายการแจ้งซ่อมคอมของ VBAC (แอดมิน)</h1>
+    </div>
+    <div class="container">
+        <h2>รายการแจ้งซ่อม</h2>
+        <div class="action">
+            <span>Export table to:</span>
+            <button>Xlsx</button>
+            <button>Xls</button>
+            <button>CSV</button>
+        </div>
+        <table id="repairTable">
+            <thead>
+                <tr>
+                    <th>หมายเลขแจ้งซ่อม</th>
+                    <th>ห้อง</th>
+                    <th>เครื่องที่</th>
+                    <th>ปัญหาที่พบ</th>
+                    <th>สถานะ</th>
+                    <th>การจัดการ</th>
+                </tr>
+            </thead>
+            <tbody id="repairList"></tbody>
+        </table>
+        <a href="index.html" class="back-btn">กลับไปหน้าแจ้งซ่อม</a>
+    </div>
+    <script src="repair_list.js"></script>
+    <!-- use version 0.20.3 -->
+<script type="text/javascript" src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+</body>
+</html>

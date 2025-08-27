@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จัดการสถานะแจ้งซ่อม (แอดมิน)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="VBAC Logo" class="logo">
+        <h1>จัดการสถานะแจ้งซ่อม (แอดมิน)</h1>
+    </div>
+    <div class="container">
+        <h2>จัดการสถานะแจ้งซ่อม</h2>
+        <form id="adminStatusForm">
+            <label for="repairId">กรุณากรอกหมายเลขแจ้งซ่อม:</label>
+            <input type="text" id="repairId" name="repairId" placeholder="เช่น 1, 2, 3">
+            <button type="submit">ค้นหา</button>
+        </form>
+        <div id="repairDetails"></div>
+        <a href="repair_list.html" class="admin-link">ดูรายการทั้งหมด</a>
+        <a href="index.html" class="back-btn">กลับไปหน้าแจ้งซ่อม</a>
+    </div>
+    <script src="admin_status.js"></script>
+</body>
+</html>

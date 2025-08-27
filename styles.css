@@ -1,0 +1,217 @@
+/* รีเซ็ตสไตล์ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* หน้าเว็บ */
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #FFF8E1; /* เหลืองอ่อน */
+    padding: 20px;
+    color: #333;
+}
+
+/* ส่วนหัว */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* โลโก้ */
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+/* ชื่อระบบ */
+h1 {
+    font-size: 24px;
+    color: #28A745; /* เขียว */
+    font-weight: 700;
+}
+
+/* กล่องห่อหุ้ม */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* หัวข้อย่อย */
+h2 {
+    color: #28A745;
+    margin: 30px 0 15px;
+    font-size: 20px;
+}
+
+/* ฟอร์ม */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Label */
+label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Dropdown, Textarea */
+select, textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #FFC107; /* เหลือง */
+    border-radius: 8px;
+    background-color: #FFF8E1;
+    transition: border-color 0.3s;
+}
+
+/* เมื่อโฟกัส */
+select:focus, textarea:focus {
+    border-color: #28A745; /* เขียว */
+    outline: none;
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* ปุ่ม */
+button {
+    padding: 12px;
+    font-size: 18px;
+    background-color: #28A745; /* เขียว */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* เมื่อชี้ปุ่ม */
+button:hover {
+    background-color: #1E7E34; /* เขียวเข้ม */
+}
+
+/* ตาราง */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+}
+
+/* หัวตารางและเซลล์ */
+th, td {
+    border: 1px solid #FFC107; /* เหลือง */
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+/* หัวตาราง */
+th {
+    background-color: #28A745; /* เขียว */
+    color: white;
+    font-weight: bold;
+}
+
+/* เซลล์ */
+td {
+    background-color: #FFF8E1; /* เหลืองอ่อน */
+}
+
+/* ปุ่มลบ */
+.delete-btn {
+    padding: 8px;
+    font-size: 14px;
+    background-color: #dc3545; /* แดง */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #b02a37; /* แดงเข้ม */
+}
+
+/* Dropdown สถานะในตาราง */
+.status-select {
+    padding: 6px;
+    font-size: 14px;
+    border: 2px solid #FFC107;
+    border-radius: 6px;
+    background-color: #FFF8E1;
+    width: 100%;
+}
+
+/* ลิงก์ */
+.status-link, .admin-link, .back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28A745;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.status-link:hover, .admin-link:hover, .back-btn:hover {
+    background-color: #1E7E34;
+}
+
+/* ผลลัพธ์สถานะ */
+#statusResult {
+    margin-top: 20px;
+}
+
+/* ปรับสำหรับมือถือ */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .container {
+        padding: 15px;
+    }
+    select, textarea, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+    th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+    .delete-btn, .status-select {
+        font-size: 12px;
+        padding: 6px;
+    }
+    .status-link, .admin-link, .back-btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}

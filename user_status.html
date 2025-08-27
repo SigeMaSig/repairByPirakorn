@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตรวจสอบสถานะแจ้งซ่อม</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="VBAC Logo" class="logo">
+        <h1>ตรวจสอบสถานะแจ้งซ่อม</h1>
+    </div>
+    <div class="container">
+        <h2>ตรวจสอบสถานะแจ้งซ่อม</h2>
+        <form id="statusForm">
+            <label for="room">กรุณาเลือกห้องคอม:</label>
+            <select id="room" name="room">
+                <option value="">-- เลือกห้องคอม --</option>
+                <option value="201">ห้องคอม 201</option>
+                <option value="202">ห้องคอม 202</option>
+                <option value="203">ห้องคอม 203</option>
+                <option value="204">ห้องคอม 204</option>
+                <option value="205">ห้องคอม 205</option>
+                <option value="206">ห้องคอม 206</option>
+                <option value="207">ห้องคอม 207</option>
+                <option value="208">ห้องคอม 208</option>
+                <option value="209">ห้องคอม 209</option>
+                <option value="311">ห้องคอม 311</option>
+            </select>
+            <button type="submit">ตรวจสอบสถานะ</button>
+        </form>
+        <div id="statusResult">
+            <table id="statusTable">
+                <thead>
+                    <tr>
+                        <th>เครื่องที่</th>
+                        <th>สถานะ</th>
+                    </tr>
+                </thead>
+                <tbody id="statusList"></tbody>
+            </table>
+        </div>
+        <a href="index.html" class="back-btn">กลับไปหน้าแจ้งซ่อม</a>
+    </div>
+    <script src="user_status.js"></script>
+</body>
+</html>
